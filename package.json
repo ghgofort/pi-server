@@ -1,5 +1,5 @@
 {
-  "name": "code",
+  "name": "picode",
   "version": "1.0.0",
   "description": "Raspberry Pi code directory",
   "main": "index.js",
@@ -9,6 +9,8 @@
   "author": "galengoforth@gmail.com",
   "license": "ISC",
   "dependencies": {
-    "bme280-sensor": "^0.1.7"
+    "bme280-sensor": "^0.1.7",
+    "node-adafruit-bme280": "^1.0.2",
+    "python-shell": "^5.0.0"
   }
 }
