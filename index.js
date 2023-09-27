@@ -21,6 +21,7 @@ const readSensorData = () => {
       //
       data.temperature_F = BME280.convertCelciusToFahrenheit(data.temperature_C);
       data.pressure_inHg = BME280.convertHectopascalToInchesOfMercury(data.pressure_hPa);
+      data.dateTimeCreated = firestore.Timestamp.fromDate(new Date());
 
       console.log(`data = ${JSON.stringify(data, null, 2)}`);
       writeDataToFirebase(data);
