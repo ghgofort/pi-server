@@ -25,7 +25,7 @@ const readSensorData = () => {
 
       console.log(`data = ${JSON.stringify(data, null, 2)}`);
       writeDataToFirebase(data);
-      setTimeout(readSensorData, 20000);
+      setTimeout(readSensorData, 3600000);
     })
     .catch((err) => {
       console.log(`BME280 read error: ${err}`);
